@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+.home {
+  position: absolute; 
+  top: 50%; left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+#spectateur {
+	border-top-left-radius: 20px;
+	color: white;
+	font-family: century gothic;
+	background-image:linear-gradient( #5b79ff, #1500ff);
+}
+
+#spectateur:active {
+	background: #1500ff;
+}
+
+#participant {
+	background:#335AEE;
+	color: white;
+	font-family: century gothic;
+}
+
+#staff {
+	border-top-right-radius: 20px;
+	background:#335AEE;
+	color: white;
+	font-family: century gothic;
+}
+
+footer {
+	background: black ;
+	color: white ;
+	font-size:  small ;
+	
+}
+
+#txt {
+	color: #335AEE;
+	border-color: black ;
+	border-width: inherit ;
+}
+
+.diapo {
+	margin: 0px auto ;
+	height: 1080px;
+	width: 1920px;
+	background-image: url(img/shish-kebab-417994_1920.jpg);
+	
+	webkit-animation-name: diapo ;
+	webkit-animation-duration: 40s;
+	webkit-animation-timing-function: linear;
+	webkit-animation-iteration-count: infinite;
+	webkit-animation-direction: normal ;
+	
+	moz-name: diapo ;
+	moz-duration: 40s;
+	moz-timing-function: linear;
+	moz-iteration-count: infinite;
+	moz-direction: normal ;	
+	
+	
+	animation-name: diapo ;
+	animation-duration: 40s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal ;
+}
+
+@keyframes diapo {
+	0%{background-image: url(img/shish-kebab-417994_1920.jpg);}
+	33%{background-image: url(img/maxresdefault.jpg);}
+	63%{background-image: url(img/men-2425121_1920.jpg)}
+}
+
+@-webkit-keyframes diapo {
+	0%{background-image: url(img/shish-kebab-417994_1920.jpg);}
+	33%{background-image: url(img/maxresdefault.jpg);}
+	63%{background-image: url(img/men-2425121_1920.jpg)}
+}
+
+@-moz-keyframes diapo {
+	0%{background-image: url(img/shish-kebab-417994_1920.jpg);}
+	33%{background-image: url(img/maxresdefault.jpg);}
+	63%{background-image: url(img/men-2425121_1920.jpg)}
+}
