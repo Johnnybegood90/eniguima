@@ -1,5 +1,6 @@
-from flask import Flask , render_template , request
+from flask import Flask , render_template , request , redirect 
 import os 
+
 #import rethinkdb as r 
 
 
@@ -26,7 +27,10 @@ def page_error(error):
     return render_template("500.html")
 @app.route("/login" , methods=["POST"])
 def connexion():
-    return f"{request.form['password']}"
+    if request.form["password"] == "admin":
+        return redirect("/staff" , code=302)
+    else: 
+        return redirect("/" , code=302)
 @app.route("/team")
 def teampanel():
     return render_template("team.html")
