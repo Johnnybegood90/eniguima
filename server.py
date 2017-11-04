@@ -39,7 +39,4 @@ def teampanel():
 @app.route("/staff")
 def staffpanel():
     return render_template("staff.html")
-@app.route("/error")
-def error_make():
-    return fakevariable
 app.run()
