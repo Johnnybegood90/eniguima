@@ -31,6 +31,8 @@ def connexion():
         return redirect("/staff" , code=302)
     elif request.form["password"] == "team": 
         return redirect("/team" , code=302)
+    else:
+        return redirect("/" , code=302)
 @app.route("/team")
 def teampanel():
     return render_template("team.html")
