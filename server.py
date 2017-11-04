@@ -42,4 +42,4 @@ def staffpanel():
 
 database.connect()
 databse.create_db()
-app.run()
+app.run(port=5050)
