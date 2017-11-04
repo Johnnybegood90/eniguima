@@ -1,6 +1,6 @@
 from flask import Flask , render_template , request , redirect 
 import os 
-
+from db import Database
 
 database = Database()
 
