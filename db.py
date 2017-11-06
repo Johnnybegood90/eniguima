@@ -24,7 +24,7 @@ class Database:
 
     def create_tables(self):
         # avoid calling table_list several times
-        tmp = r.db(db_name).table_list().run()
+        tmp = r.db(self.db_name).table_list().run()
         for name in tables_names:
             if name not in tmp:
-                r.db(db_name).table_create(name).run()
+                r.db(self.db_name).table_create(name).run()
