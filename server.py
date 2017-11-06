@@ -41,5 +41,5 @@ def staffpanel():
     return render_template("staff.html")
 
 database.connect()
-databse.create_db()
+database.create_db()
 app.run(port=5050)
