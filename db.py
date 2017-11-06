@@ -8,7 +8,7 @@ class Database:
     db_name = ""
 
     # tables names #
-    tables_names = array("users", "enigmas")
+    tables_names = ["users", "enigmas"]
 
     def __init__(self, db_address = "localhost", db_port = 28015, db_name = "eniguima"):
         self.db_address = db_address
