@@ -15,5 +15,5 @@ class Database:
         r.connect(self.db_address, self.db_port).repl()
 
     def create_db(self):
-        if not r-dblist().contains(self.db_name):
+        if not r_dblist().contains(self.db_name):
             r.db_create(self.db_name).run()
