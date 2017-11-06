@@ -19,7 +19,7 @@ class Database:
         r.connect(self.db_address, self.db_port).repl()
 
     def create_db(self):
-        if not r.db_list().contains(self.db_name) and sugar is "":
+        if not r.db_list().contains(self.db_name):
             r.db_create(self.db_name).run()
 
     def create_tables(self):
