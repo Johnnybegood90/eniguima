@@ -1,8 +1,8 @@
 from flask import Flask , render_template , request , redirect 
 import os 
+from db import Database
 
-#import rethinkdb as r 
-
+database = Database()
 
 app = Flask(__name__, template_folder=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates'))
 app.config.update(
@@ -39,4 +39,7 @@ def teampanel():
 @app.route("/staff")
 def staffpanel():
     return render_template("staff.html")
-app.run()
+
+database.connect()
+database.create_db()
+app.run(port=5050)
