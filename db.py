@@ -11,7 +11,7 @@ class Database:
         self.db_port = db_port
         self.db_name = db_name
 
-    def connect():
+    def connect(self):
         r.connect(self.db_address, self.db_port).repl()
 
     def create_db(db_name = self.db_name):
