@@ -2,3 +2,49 @@ a:visited
 {
 	color: #FFF;
 }
+
+body 
+{
+	background-color: #2C2F33;
+}
+
+#menuHaut
+{
+  background-color: #7289DA;
+  font-family: "Calibri";
+  text-decoration: none;
+/*  transition: opacity 0.5s; */
+  color: #FFF;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  opacity: 0.8;
+/*  z-index: 2;
+}
+
+#menuHaut ul { 
+/*  margin: 0;
+}
+
+#menuHaut:hover {
+/*  opacity: 1;
+}
+
+#menuHaut ul li div a {
+/*  text-decoration: inherit;
+/*  color: orange;
+}
+
+#menuHaut ul li
+{
+/*  display: inline-block;
+/*  padding: 20px 20px 20px 20px;
+/*  list-style-type: none;
+/*  transition: background-color 0.5s;
+}
+
+#menuHaut ul li:hover
+{
+/*  background-color: #BBBBBB;
+} 
