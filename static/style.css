@@ -7,6 +7,12 @@ a:visited
 body 
 {
 	background-color: #2C2F33;
+    margin:0;
+    box-sizing:border-box;
+}
+
+.download {
+    text-decoration: none;
 }
 
 #menuHaut
@@ -25,7 +31,7 @@ body
 
 #menuHaut ul { 
   margin: 0;
-  text-align: right;
+  text-align: center;
 }
 
 #menuHaut:hover {
@@ -50,3 +56,21 @@ body
   background-color: #BBBBBB;
 } 
 
+h1
+{
+    text-align: center;
+    color: white;
+}
+
+.download {
+    display: inline-block;
+    margin: 0 8px;
+    display: block;
+    margin: 10px 4px;
+    padding: .2em .6em;
+    background-color: #026e00;
+    color: #fff !important;
+    border-radius: 2px;
+    font-size: 30px;
+    font-weight: 400;
+}
