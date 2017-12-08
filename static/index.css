@@ -1,0 +1,19 @@
+body{background-color: rgba(0, 0, 255, 0.212);}
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.test{background-color: rgba(99, 13, 219, 0.418); height: 100%;}
+.main{background: url("https://cdn.discordapp.com/attachments/376321784636506113/376428126689034240/Untitled_12.jpg");
+    background-size: cover;
+    height: 100%;   
+    width: auto;
+    max-height: 100%;
+}
+
+.main .count{font-weight: bold;}
+.main .info{color: rgba(255, 255, 255, 0.808);font-size:1.5em;}
+.main-tittle{padding-top: 10%;color: rgba(255, 255, 255, 0.808);font-size:5em;}
+.main button{margin-top:15%;color: rgba(255, 255, 255, 0.712);font-size:1.5em;}
+.main button{background-color: rgba(0, 0, 0, 0.746) ;}
